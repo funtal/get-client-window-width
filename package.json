@@ -1,0 +1,83 @@
+{
+  "version": "0.1.0",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "homepage": "https://github.com/funtal/get-client-window-width#readme",
+  "description": "A safe way of returning the interior width of the window in pixels",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/funtal/get-client-window-width.git"
+  },
+  "bugs": {
+    "url": "https://github.com/funtal/get-client-window-width/issues"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build",
+    "size": "size-limit",
+    "analyze": "size-limit --why"
+  },
+  "peerDependencies": {},
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "name": "get-client-window-width",
+  "author": "playerony",
+  "module": "dist/get-client-window-width.esm.js",
+  "size-limit": [
+    {
+      "path": "dist/get-client-window-width.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/get-client-window-width.esm.js",
+      "limit": "10 KB"
+    }
+  ],
+  "devDependencies": {
+    "@size-limit/preset-small-lib": "^7.0.8",
+    "husky": "4.3.6",
+    "size-limit": "^7.0.8",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.4.0",
+    "typescript": "^4.7.4"
+  },
+  "keywords": [
+    "ts",
+    "lib",
+    "ssr",
+    "funtal",
+    "ssr safe",
+    "function",
+    "playerony",
+    "typescript",
+    "Typescript",
+    "window.innerWidth",
+    "getClientWindowWidth",
+    "server-side-rendering",
+    "get client window width",
+    "get-client-window-width",
+    "document.body.clientWidth",
+    "ssr safe window.innerWidth",
+    "document.documentElement.clientWidth"
+  ]
+}
